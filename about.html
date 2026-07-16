@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About — Aditya Narain</title>
+  <meta name="description" content="About Aditya Narain: background, skills, and approach to accessible front-end web development.">
+  <meta name="author" content="Aditya Narain">
+  <link rel="canonical" href="https://example.com/about.html">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About — Aditya Narain">
+  <meta property="og:description" content="Background, skills, and approach to accessible front-end web development.">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">Aditya Narain</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section aria-labelledby="about-heading">
+      <h1 id="about-heading">About me</h1>
+      <p class="lede">I'm a web development intern building toward front-end and full-stack work, with a particular interest in the parts of the web that are easy to skip — semantic structure, accessibility, and performance.</p>
+      <p>I'm currently interning with Thiranex, where I'm working on practical, mentored projects. This portfolio is one of them: a small proof that a page can be both well-designed and well-built underneath.</p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="hero-tags" aria-hidden="true">
+        <span class="pill">HTML5 &amp; Semantic Markup</span>
+        <span class="pill">CSS3</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">ARIA &amp; WCAG</span>
+        <span class="pill">Responsive Design</span>
+        <span class="pill">SEO Basics</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="approach-heading">
+      <h2 id="approach-heading">How I approach a build</h2>
+      <article class="card">
+        <span class="meta">01 — Structure first</span>
+        <h3>Content before styling</h3>
+        <p>I write the HTML outline before any CSS — headings, landmarks, and lists in the right order, so the page makes sense even with the styling turned off.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Aditya Narain. Built with semantic HTML5.</p>
+  </footer>
+
+</body>
+</html>

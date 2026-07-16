@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects — Aditya Narain</title>
+  <meta name="description" content="Selected web development projects by Aditya Narain, focused on semantic HTML5, accessibility, and clean front-end engineering.">
+  <meta name="author" content="Aditya Narain">
+  <link rel="canonical" href="https://example.com/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Aditya Narain">
+  <meta property="og:description" content="Selected web development projects focused on semantic HTML5 and accessibility.">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">Aditya Narain</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section aria-labelledby="projects-heading">
+      <h1 id="projects-heading">Projects</h1>
+      <p class="lede">A few things I've built. Each one leans on semantic HTML5 and accessible patterns rather than div-and-class soup.</p>
+    </section>
+
+    <section aria-label="Project list">
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="meta">Personal Site</span>
+          <h3>This portfolio</h3>
+          <p>A multi-page site built to strict semantic HTML5 and WCAG standards — the one you're looking at now. Fully keyboard-navigable, with ARIA labels and an accessible contact form.</p>
+        </article>
+
+        <article class="card">
+          <span class="meta">Practice Build</span>
+          <h3>Accessible form patterns</h3>
+          <p>A small library of form components — labeled fields, inline error messages tied to inputs via <code>aria-describedby</code>, and a live status region for submission feedback.</p>
+        </article>
+
+        <article class="card">
+          <span class="meta">In Progress</span>
+          <h3>SEO audit toolkit</h3>
+          <p>A checklist-driven tool for reviewing meta tags, heading order, and alt text across a site before launch.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Aditya Narain. Built with semantic HTML5.</p>
+  </footer>
+
+</body>
+</html>

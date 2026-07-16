@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact — Aditya Narain</title>
+  <meta name="description" content="Get in touch with Aditya Narain via the accessible contact form.">
+  <meta name="author" content="Aditya Narain">
+  <link rel="canonical" href="https://example.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Aditya Narain">
+  <meta property="og:description" content="Get in touch with Aditya Narain.">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">Aditya Narain</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Get in touch</h1>
+      <p class="lede">Every field below is labeled, tab-navigable in order, and announces errors to assistive technology as soon as they're detected.</p>
+
+      <form novalidate id="contact-form">
+
+        <div class="field">
+          <label for="name">Name <span class="required-mark" aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+            aria-required="true"
+            aria-describedby="name-error">
+          <p class="error-message" id="name-error" role="alert">Please enter your name.</p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email <span class="required-mark" aria-hidden="true">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            aria-required="true"
+            aria-describedby="email-hint email-error">
+          <p class="hint" id="email-hint">We'll only use this to reply to you.</p>
+          <p class="error-message" id="email-error" role="alert">Please enter a valid email address.</p>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            autocomplete="off">
+        </div>
+
+        <div class="field">
+          <label for="message">Message <span class="required-mark" aria-hidden="true">*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            aria-required="true"
+            aria-describedby="message-error"></textarea>
+          <p class="error-message" id="message-error" role="alert">Please enter a message.</p>
+        </div>
+
+        <button type="submit" class="btn">Send message</button>
+
+        <p role="status" id="form-status" aria-live="polite"></p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Aditya Narain. Built with semantic HTML5.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
